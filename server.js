@@ -14,6 +14,11 @@ const users = [
     {username: "charlie" , age : 28 , email : "charlie@example.com"}
 ]
 
+app.get('/',(req,res)=>{
+    res.send("A the task will working on /get/:user route where user is the query parameter and you can add user name in the query parameter")
+})
+
+
 app.get('/get/:user',(req,res)=>{
     const {user} = req.params;
 
